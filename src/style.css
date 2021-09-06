@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* GLOBALS  */
 
 body {
@@ -20,9 +24,16 @@ body {
 }
 
 h2, h3 {
-    font-size: 3rem;
     text-transform: capitalize;
 }
+
+h1, h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+
 
 ul {
     display: none;
@@ -61,32 +72,37 @@ li a:hover:after {
 
 button {
     display: none;
-    background-color: var(--yellow);
+    color: var(--black);
+    background-color: inherit;
     padding: 0.725rem;
-    border: none;
+    border: 1px solid var(--black);
     text-transform: uppercase;
     box-shadow: 1px 1px 3px var(--black);
+
 }
 
 button:hover {
-    opacity: 0.8;
     cursor: pointer;
+    background-color: var(--yellow);
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* NAVIGATION BAR - MOBILE FIRST */
+/* NAVIGATION BAR - MOBILE */
 
 .navbar {
     margin: 0 auto;
-    height: 7vh;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #ffff;
 }
 
 span.hamburguer_menu_line {
@@ -98,16 +114,7 @@ span.hamburguer_menu_line {
     background: var(--black);
 }
 
-.bg_yellow-white {
-    background-image: linear-gradient(to right, var(--yellow) 50%, var(--white)50%);
-    height: 90vh;
-}
-.bg_white-yellow {
-    background-image: linear-gradient(to left, var(--yellow) 50%, var(--white)50%);
-    height: 90vh;
-}
-
-/* NAVIGATION BAR - DESKTOP */
+/* NAVIGATION BAR - LARGER SCREENS */
 
 @media (min-width: 950px){
     .navbar ul {
@@ -123,22 +130,62 @@ span.hamburguer_menu_line {
     }
 }
 
+
+/* BACKGROUND STYLES */
+
+.bg_yellow-white {
+    background-image: linear-gradient(to right, var(--yellow) 50%, var(--white)50%);
+    height: 95vh;
+}
+.bg_white-yellow {
+    background-color: var(--white);
+    height: 95vh;
+}
+
+@media (min-width:1300px){
+    .bg_white-yellow {
+        background-image: linear-gradient(to left, var(--yellow) 50%, var(--white)50%);
+    }
+}
+
+
+/* UTILITY CLASSES */
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc_c {
+    justify-content: center;
+}
+
+.ai_c {
+    align-items: center;
+}
+
 /* SECTION - INTRODUCTION */
 
 .section__introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     overflow: hidden;
-    scroll-behavior: smooth;
 }
 
+.section__introduction button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.section__introduction button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
 
 .section__introduction span {
     display: block;
     color: var(--khaki);
-    font-size: 2rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
 }
 
@@ -148,31 +195,32 @@ span.hamburguer_menu_line {
         padding-left: 4rem;
         text-align: left;
     }
+
+    .section__introduction button {
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
 }
 
 
 /* SECTION - EDUCATION */
-.section__education {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
+.about_me {
+    margin: 2rem 0;
 }
 
-.certificates, .about_me {
-    padding: 2rem;
+.certificate_item {
+    margin-top: 1.725rem;
 }
 
-
-.certificates img {
-    display: block;
-    margin: 3rem;
-    width: 450px;
+.certificate_item img {
+    width: 300px;
+    margin-bottom: 0.5rem;
 }
 
-.certificates p, .icons {
-    text-align: center;
+.icons img {
+    width: 30px;
 }
 
 .icons {
-    font-size: 2rem;
+    margin-bottom: 2rem;
 }
-

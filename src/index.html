@@ -20,7 +20,7 @@
             <li class="navbar__links"><a href="#about">About</a></li>
             <li class="navbar__links"><a href="#projects">Projects</a></li>
         </ul>
-        <button id="btn">Contact Me</button>
+        <button>Contact Me</button>
         <div class="hamburguer__menu">
             <span class="hamburguer_menu_line"></span>
             <span class="hamburguer_menu_line"></span>
@@ -29,37 +29,50 @@
     </div>
 
     <!-- SECTION - INTRODUCTION -->
-    <section class="container bg_yellow-white section__introduction">
+    <section class="container bg_yellow-white flex-col jc_c section__introduction ">
         <h2>Hello, <br /> I'm Victoria Moreno <span>Front End Developer</span> </h2>
+        <button>Contact Me</button>
     </section>
 
 
     <!-- SECTION - EDUCATION -->
-    <section id="about" class="container bg_white-yellow section__education ">
-        <div class="certificates">
-            <h3>Certificates</h3>
-            <img src="../images/SheCodes-certificate-Plus.png" alt="SheCodes Certificate of Plus course completion">
-                <p>Technologies used</p>
-                    <div class="icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-github"></i>
-                    </div>
-            <img src="../images/SheCodes-certificate-React.png" alt="SheCodes Certificate of React course completion">
-                <p>Technologies used</p>
-                <div class="icons">
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-react"></i>
-                </div>
-        </div>
-        <div class="about_me">
+    <section id="about" class="container bg_white-yellow flex-col section__education">
+
+        <!-- ABOUT ME -->
+        <div class="about_me flex-col-center">
             <h3>A bit about me</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, minus cum, provident quae impedit, dignissimos nam earum velit doloremque reprehenderit eaque. Id inventore nesciunt recusandae dignissimos iusto sed voluptates quia.</p>
         </div>
+
+
+        <!-- CERTIFICATES  -->
+        <div class="certificates">
+            <h3>Certificates</h3>
+            <div class="certificate_item flex-col ai_c">
+                    <img src="../images/SheCodes-certificate-Plus.png" alt="SheCodes Certificate of Plus course completion">
+                        <p>Technologies used</p>
+                            <div class="icons">
+                                <img src="../images/html.png" alt="HTML logo">
+                                <img src="../images/css.png" alt="CSS logo">
+                                <img src="../images/javascript.png" alt="Javascript logo">
+                                <img src="../images/API.png" alt="API logo">
+                                <img src="../images/github.png" alt="github logo">
+                            </div>
+                    <img src="../images/SheCodes-certificate-React.png" alt="SheCodes Certificate of React course completion">
+                        <p>Technologies used</p>
+                        <div class="icons">
+                            <img src="../images/html.png" alt="HTML logo">
+                            <img src="../images/css.png" alt="CSS logo">
+                            <img src="../images/javascript.png" alt="Javascript logo">
+                            <img src="../images/API.png" alt="API logo">
+                            <img src="../images/react.png" alt="react logo">
+                            <img src="../images/github.png" alt="github logo">
+                        </div>
+            </div>
+
+        </div>
+
+        
 
     </section>
 
