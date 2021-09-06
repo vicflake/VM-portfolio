@@ -224,3 +224,25 @@ span.hamburguer_menu_line {
 .icons {
     margin-bottom: 2rem;
 }
+
+@media (min-width:950px) {
+    .section__education {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about_me p {
+        width: 80%;
+    }
+
+    .certificates {
+        margin: 2rem;
+    }
+
+    .certificate_item > img {
+        width: 450px;
+        margin-bottom: 0.5rem;
+    }
+
+
+}
