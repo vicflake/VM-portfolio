@@ -32,7 +32,7 @@ h2, h3 {
     text-transform: capitalize;
 }
 
-2 {
+h2 {
     font-size: 2rem;
 }
 h3 {
@@ -162,7 +162,7 @@ span.hamburguer_menu_line {
     height: 95vh;
 }
 
-@media (min-width:1300px){
+@media (min-width:1150px){
     .bg_white-yellow {
         background-image: linear-gradient(to left, var(--yellow) 50%, var(--white)50%);
     }
