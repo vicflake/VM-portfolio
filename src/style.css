@@ -26,7 +26,7 @@ ul {
 
 li {
     list-style: none;
-    padding-right: 2rem;
+    padding-right: 6rem;
 }
 
 li:last-child {
@@ -36,21 +36,48 @@ li:last-child {
 a {
     text-decoration: none;
     color: inherit;
+    position: relative;
+}
+
+li a:after {
+    position: absolute;
+    left: 0.2rem;
+    content: '';
+    height: 11px;
+    width: 40px;
+    border-bottom: solid 12px var(--yellow);
+    opacity: 0;
+    z-index: -1;
+}
+
+li a:hover:after {
+    opacity: 0.75;
 }
 
 button {
     display: none;
     background-color: var(--yellow);
-    padding: 0.5rem;
+    padding: 0.725rem;
     border: none;
     text-transform: uppercase;
-    box-shadow: 1px 1px 5px var(--black);
+    box-shadow: 1px 1px 3px var(--black);
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 /* NAVIGATION BAR - MOBILE FIRST */
 
 .navbar {
-    margin: 0 2rem;
+    margin: 0 auto;
     height: 6.25rem;
     display: flex;
     align-items: center;
@@ -69,11 +96,6 @@ span.hamburguer_menu_line {
 /* NAVIGATION BAR - DESKTOP */
 
 @media (min-width: 950px){
-    .navbar {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
-    }
     .navbar ul {
         display: flex;
     }
