@@ -1,0 +1,89 @@
+:root {
+    --black: #020302;
+    --white: #F3F5F9;
+    --yellow: #FFDB15;
+    --khaki: #b5a197;
+}
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBALS  */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+
+ul {
+    display: none;
+}
+
+
+li {
+    list-style: none;
+    padding-right: 2rem;
+}
+
+li:last-child {
+    padding-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    display: none;
+    background-color: var(--yellow);
+    padding: 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 5px var(--black);
+}
+
+/* NAVIGATION BAR - MOBILE FIRST */
+
+.navbar {
+    margin: 0 2rem;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span.hamburguer_menu_line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: var(--black);
+}
+
+/* NAVIGATION BAR - DESKTOP */
+
+@media (min-width: 950px){
+    .navbar {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar button {
+        display: block;
+    }
+
+    .hamburguer__menu{
+        display: none;
+    }
+}
+
