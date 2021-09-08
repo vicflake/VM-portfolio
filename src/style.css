@@ -247,8 +247,7 @@ SECTION - INTRODUCTION
 SECTION - EDUCATION
 =================== */
 .section__education{
-    height: 100vh;
-    padding-top: 75px;
+    padding-top: 6.25rem;
 }
 
 .about_me, .certificates {
@@ -290,7 +289,7 @@ SECTION - EDUCATION
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 100vh;
-        padding-top: 75px;
+        padding-top: 6.25rem;
     }
 
     .about_me, .certificates {
@@ -311,3 +310,58 @@ SECTION - EDUCATION
         background-image: linear-gradient(to left, var(--yellow) 50%, var(--white)50%);
     }
 }
+
+/* =============
+    PROJECTS PORTFOLIO
+================*/
+.section__projects {
+    padding: 6.25rem 2rem;
+}
+
+.section__projects h3 {
+    margin-bottom: 2rem;
+}
+
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 50% 50%;
+    gap: 5px;
+}
+
+
+.project_image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 1300px) {
+    .section__education {
+        background-image: linear-gradient(to left, var(--yellow) 50%, var(--white)50%);
+    }
+
+}
+
+
+/* ======
+FOOTER
+========= */
+
+footer {
+    background-color: var(--grey);
+    height: 50vh;
+    color: var(--black);
+    padding: 2rem;
+}
+
+
+
