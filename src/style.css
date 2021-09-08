@@ -1,8 +1,8 @@
 :root {
-    --black: #020302;
-    --white: #F3F5F9;
-    --yellow: #FFDB15;
-    --khaki: #b5a197;
+    --black: #050707;
+    --white: #eCF1F2;
+    --yellow: #F4D800;
+    --grey: #7F7F7F;
 }
 
 
@@ -37,6 +37,22 @@ h2 {
 }
 h3 {
     font-size: 1.25rem;
+}
+
+
+/* UTILITY CLASSES */
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc_c {
+    justify-content: center;
+}
+
+.ai_c {
+    align-items: center;
 }
 
 
@@ -97,17 +113,21 @@ button:hover {
     padding: 0 2rem;
 }
 
-/* NAVIGATION BAR - MOBILE */
+/* =====================
+NAVIGATION BAR - MOBILE
+======================== */
 
 .navbar {
     margin: 0 auto;
-    height: 5vh;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-color: #ffff;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--grey);
+    z-index: 1000;
 }
 
 span.hamburguer_menu_line {
@@ -134,7 +154,9 @@ span.hamburguer_menu_line {
 
 }
 
-/* NAVIGATION BAR - LARGER SCREENS */
+/* ========================
+NAVIGATION BAR - LARGER SCREENS
+=========================== */
 
 @media (min-width: 950px){
     .navbar ul {
@@ -151,50 +173,25 @@ span.hamburguer_menu_line {
 }
 
 
-/* BACKGROUND STYLES */
-
-.bg_yellow-white {
-    background-image: linear-gradient(to right, var(--yellow) 50%, var(--white)50%);
-    height: 95vh;
-}
-.bg_white-yellow {
-    background-color: var(--white);
-    height: 95vh;
-}
-
-@media (min-width:1150px){
-    .bg_white-yellow {
-        background-image: linear-gradient(to left, var(--yellow) 50%, var(--white)50%);
-    }
-}
-
-
-/* UTILITY CLASSES */
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.jc_c {
-    justify-content: center;
-}
-
-.ai_c {
-    align-items: center;
-}
-
-/* SECTION - INTRODUCTION */
+/* ===================
+SECTION - INTRODUCTION
+====================== */
 
 .section__introduction {
-    text-align: center;
+    text-align: left;
     overflow: hidden;
+    position: relative;
+    height: 94vh;
+}
+
+.section__introduction h2 {
+    padding-left: 2rem;
 }
 
 .section__introduction button {
     display: block;
     width: 150px;
-    margin: 1rem auto;
+    margin: 2rem;
 }
 
 .section__introduction button:hover {
@@ -202,11 +199,33 @@ span.hamburguer_menu_line {
     color: var(--white);
 }
 
-.section__introduction span {
+.career_desc {
     display: block;
-    color: var(--khaki);
+    color: var(--grey);
     font-size: 1.25rem;
     text-transform: uppercase;
+}
+
+.yellow_box {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--yellow);
+    z-index: -1;
+}
+
+
+@media (min-width: 650px){
+    .yellow_box {
+        position: absolute;
+        left: 2rem;
+        width:450px;
+        height: 450px;
+        background-color: var(--yellow);
+        box-shadow: 115px 115px 0px var(--white);
+        z-index: -1;
+    }
 }
 
 @media (min-width: 950px){
@@ -217,15 +236,22 @@ span.hamburguer_menu_line {
     }
 
     .section__introduction button {
-        margin-left: 4rem;
-        margin-top: 2rem;
+        margin: 2rem;
     }
 }
 
 
-/* SECTION - EDUCATION */
+
+
+/* ================
+SECTION - EDUCATION
+=================== */
+
+
 .about_me {
     margin: 2rem 0;
+    justify-self: stretch;
+    align-self: stretch;
 }
 
 .certificate_item {
@@ -249,6 +275,8 @@ span.hamburguer_menu_line {
     .section__education {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        padding-top: 75px;
     }
 
     .about_me p {
@@ -263,6 +291,5 @@ span.hamburguer_menu_line {
         width: 450px;
         margin-bottom: 0.5rem;
     }
-
 
 }
