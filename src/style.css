@@ -92,14 +92,12 @@ li a:hover:after {
 }
 
 button {
-    display: none;
     color: var(--black);
     background-color: inherit;
     padding: 0.725rem;
     border: 1px solid var(--black);
     text-transform: uppercase;
     box-shadow: 1px 1px 3px var(--black);
-
 }
 
 button:hover {
@@ -139,6 +137,10 @@ span.hamburguer_menu_line {
     background: var(--black);
     transition: all 300ms ease-in-out;
     transform-origin: 5px 1px;
+}
+
+.btn_navbar {
+    display: none;
 }
 
 .opened span:first-child {
@@ -182,6 +184,7 @@ SECTION - INTRODUCTION
     overflow: hidden;
     position: relative;
     height: 94vh;
+    background-color: var(--yellow);
 }
 
 .section__introduction h2 {
@@ -210,7 +213,7 @@ SECTION - INTRODUCTION
 
 @media (min-width: 800px){
     .section__introduction{
-        background-color: none;
+        background-color: white;
     }
     .introduction {
         background-color: var(--yellow);
@@ -324,11 +327,26 @@ SECTION - EDUCATION
     object-fit: cover;
     object-position: 50% 50%;
     cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+
+.project_gallery_item:hover img {
+    transform: scale(1.2);
+}
+
+.project_gallery_item {
+
 }
 
 .project_text {
-    margin-bottom: 1rem;
+    margin: 0.5rem 0;
 }
+
+.btn_project {
+    margin: 0.5rem 0;
+}
+
+
 
 @media (min-width:700px){
 
