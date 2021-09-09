@@ -3,6 +3,7 @@
     --white: #eCF1F2;
     --yellow: #F4D800;
     --grey: #7F7F7F;
+
 }
 
 
@@ -219,7 +220,7 @@ SECTION - INTRODUCTION
         background-color: var(--yellow);
         width: 50%;
         padding: 8rem 2rem;
-        box-shadow: 115px 115px 0px var(--grey);
+        box-shadow: 115px 115px 0px var(--white);
     }
 }
 
@@ -229,7 +230,7 @@ SECTION - INTRODUCTION
     }
 
     .section__introduction button {
-        margin: 2rem 6rem;
+        margin: 2rem 2rem;
     }
 }
 
@@ -309,16 +310,19 @@ SECTION - EDUCATION
 ================*/
 .section__projects {
     padding: 6.25rem 2rem;
+    margin-bottom: 5rem;
 }
 
 .section__projects h3 {
     margin-bottom: 2rem;
 }
 
+
 .project_image {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin-bottom: none;
 }
 
 .project_image img {
@@ -327,40 +331,69 @@ SECTION - EDUCATION
     object-fit: cover;
     object-position: 50% 50%;
     cursor: pointer;
-    transition: 500ms ease-in-out;
-}
-
-.project_gallery_item:hover img {
-    transform: scale(1.2);
-}
-
-.project_gallery_item {
-
+    border: 1px solid var(--grey);
+    border-bottom: none;
 }
 
 .project_text {
-    margin: 0.5rem 0;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--grey);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
 }
 
 .btn_project {
-    margin: 0.5rem 0;
+    margin-top: 0.5rem;
 }
 
 
 
 @media (min-width:700px){
-
-    .section__projects {
-        padding-left: 0;
-        padding-right: 0;
+    .section__projects{
+        padding: 6.25rem 0;
     }
+
     .projects__container {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 100%;
         gap: 10px;
     }
+
+    .project_gallery_container {
+        position: relative;
+    }
+
+    .project_gallery_container:hover img {
+        opacity: 0.3;
+    }
+
+    .project_image img {
+        border: none;
+    }
+    .project_text {
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        border: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 0;
+        color: var(--black);
+        transition: all 300ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .project_gallery_container:hover .project_text{
+        opacity: 1;
+    }
+
 }
+
+
 
 
 /* ======
@@ -369,7 +402,6 @@ FOOTER
 
 footer {
     background-color: var(--white);
-    height: 50vh;
     color: var(--black);
     padding: 2rem;
 }
