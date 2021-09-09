@@ -350,13 +350,13 @@ SECTION - EDUCATION
 
 @media (min-width:700px){
     .section__projects{
-        padding: 5.75rem 0;
+        padding: 5.75rem 2rem;
     }
 
     .projects__container {
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 100%;
+        grid-template-rows: 400px;
         gap: 10px;
     }
 
