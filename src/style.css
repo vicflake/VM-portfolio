@@ -107,7 +107,7 @@ button:hover {
 }
 
 .container {
-    max-width: 2000px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -123,9 +123,8 @@ NAVIGATION BAR - MOBILE
     align-items: center;
     justify-content: space-between;
     position: sticky;
+    background-color: white;
     top: 0;
-    background-color: var(--white);
-    border-bottom: 2px solid var(--grey);
     z-index: 1000;
 }
 
@@ -241,7 +240,7 @@ SECTION - INTRODUCTION
 SECTION - EDUCATION
 =================== */
 .section__education{
-    padding-top: 6.25rem;
+    padding-top: 3.75rem;
 }
 
 .about_me, .certificates {
@@ -283,7 +282,7 @@ SECTION - EDUCATION
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 100vh;
-        padding-top: 6.25rem;
+        padding-top: 3.75rem;
     }
 
     .about_me, .certificates {
@@ -309,7 +308,7 @@ SECTION - EDUCATION
     PROJECTS PORTFOLIO
 ================*/
 .section__projects {
-    padding: 6.25rem 2rem;
+    padding: 5.75rem 2rem;
     margin-bottom: 5rem;
 }
 
@@ -351,7 +350,7 @@ SECTION - EDUCATION
 
 @media (min-width:700px){
     .section__projects{
-        padding: 6.25rem 0;
+        padding: 5.75rem 0;
     }
 
     .projects__container {
@@ -414,10 +413,14 @@ footer p a {
     color: blue;
 }
 
-.icons_social {
+.icons_social i {
     margin-top: 1rem;
     font-size: 1.725rem;
+    cursor: pointer;
 }
 
-
+.signature {
+    text-align: center;
+    margin-top: 3rem;
+}
 
