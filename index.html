@@ -15,13 +15,13 @@
 <body>
     <!-- NAV BAR AND LOGO -->
     <div id="home" class="navbar container">
-        <h1><a href="#home">VICTORIA MORENO</a></h1>
+        <h1><a href="#">VICTORIA MORENO</a></h1>
         <ul class="navbar__elements">
-            <li class="navbar__links"><a href="#home">Home</a></li>
+            <li class="navbar__links"><a href="#">Home</a></li>
             <li class="navbar__links"><a href="#about">About</a></li>
             <li class="navbar__links"><a href="#projects">Projects</a></li>
         </ul>
-        <button class="btn_navbar">Contact Me</button>
+        <button class="btn_navbar"><a href="#contact">Contact Me</a> </button>
         <a id="btnHamburguer"class="hamburguer__menu">
             <span class="hamburguer_menu_line"></span>
             <span class="hamburguer_menu_line"></span>
@@ -87,7 +87,8 @@
                 <div class="project_text">
                     <h4>Weather App Vanilla JS</h4>
                     <p>Developed using HTML5, CSS3 and JS6</p>
-                    <button class="btn_project">View More</button>
+                    <button class="btn_project"><a href="https://github.com/vicflake/Weather-App-VanillaJS" target="_blank">View Github</a></button>
+                    <button class="btn_project"><a href="https://weather-app-vanilla-sc.netlify.app/" target="_blank">View Live</a></button>
                 </div>
             </div>
 
@@ -99,7 +100,8 @@
                 <div class="project_text">
                     <h4>Weather App React</h4>
                     <p>Developed using HTML5, CSS3 and React</p>
-                    <button class="btn_project">View More</button>
+                    <button class="btn_project"><a href="https://github.com/vicflake/weather-app-react" target="_blank">View Github</a></button>
+                    <button class="btn_project"><a href="https://weather-app-react-sc.netlify.app" target="_blank">View Live</a></button>
                 </div>
             </div>
 
@@ -109,23 +111,24 @@
                     <img src="./images/validation-form-fem.png" alt="Validation form from Front End Mentor">
                 </div>
                 <div class="project_text">
-                        <h4>Validation Form - Front End Mentor</h4>
+                        <h4>Sign up Form - Front End Mentor</h4>
                         <p>Developed using HTML5, CSS3 and JS6</p>
-                        <button class="btn_project">View More</button>
+                        <button class="btn_project"><a href="https://github.com/vicflake/sign-up-form" target="_blank">View Github</a></button>
+                    <button class="btn_project"><a href="signup-form-fem.netlify.app" target="_blank">View Live</a></button>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <footer>
-        <h3>Contact Me</h3>
-        <div class="contact__form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <input class="input_message" type="text" placeholder="Message">
-            <button>Send message</button>
+    <footer id="contact">
+        <h3>Contact me</h3>
+        <p>I’m interested in new opportunities, both remote or office-based. If you have other request or question, don’t hesitate to contact me.</p>
+        <p>Email: <a href="#">vmlopez4@gmail.com</a></p>
+        <p>Tel: +44 7754 998 510</p>
+        <div class="icons_social">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
         </div>
     </footer>
 

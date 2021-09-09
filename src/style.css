@@ -403,7 +403,20 @@ FOOTER
 footer {
     background-color: var(--white);
     color: var(--black);
-    padding: 2rem;
+    padding: 10rem 2rem;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+footer p a {
+    color: blue;
+}
+
+.icons_social {
+    margin-top: 1rem;
+    font-size: 1.725rem;
 }
 
 
