@@ -14,33 +14,50 @@
 </head>
 <body>
     <!-- NAV BAR AND LOGO -->
-    <div id="home" class="navbar container">
-            <h1><a href="#">VICTORIA MORENO</a></h1>
-            <ul class="navbar__elements">
-                <li class="navbar__links"><a href="#">Home</a></li>
-                <li class="navbar__links"><a href="#about">About</a></li>
-                <li class="navbar__links"><a href="#projects">Projects</a></li>
-            </ul>
-            <button class="btn_navbar"><a href="#contact">Contact Me</a> </button>
-            <a id="btnHamburguer"class="hamburguer__menu">
-                <span class="hamburguer_menu_line"></span>
-                <span class="hamburguer_menu_line"></span>
-                <span class="hamburguer_menu_line"></span>
-            </a>
-    </div>
+    <header>
+        <nav id="home" class="navbar">
+                <h1><a href="#">VICTORIA MORENO</a></h1>
+                <ul class="navbar__elements">
+                    <li class="navbar__links "><a href="#">Home</a></li>
+                    <li class="navbar__links"><a href="#about">About</a></li>
+                    <li class="navbar__links"><a href="#projects">Projects</a></li>
+                </ul>
+                <button class="btn_navbar"><a href="#contact">Contact Me</a> </button>
+                <a id="btnHamburguer" class="hamburguer__menu">
+                    <span class="hamburguer_menu_line"></span>
+                    <span class="hamburguer_menu_line"></span>
+                    <span class="hamburguer_menu_line"></span>
+                </a>
+        </nav>
 
+        <div class="header_menu">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <button><a href="#contact">Contact Me</a> </button>
+        </div>
+</header>
     <!-- SECTION - INTRODUCTION -->
-    <section class="container flex-col jc_c section__introduction">
+    <section id="home" class="container flex-col jc_c section__introduction">
         <div class="introduction">
-            <h2>Hi, <br /> I'm Victoria<span class="career_desc">Front End Developer</span> </h2>
+            <h2>Hi, 
+                <br /> 
+
+                I'm VICTORIA
+
+                <br />
+                <span class="career">
+                Front End Developer
+                </span>
+            </h2>
             <button><a href="#contact">Contact Me</a></button>
         </div>
     </section>
 
 
     <!-- SECTION - EDUCATION -->
-    <section id="about" class="container flex-col section__education">
-
+    <section id="about" class="bg-extend">
+        <div class="container flex-col section__education">
         <!-- ABOUT ME -->
         <div class="about_me flex-col">
             <h3>A bit about me</h3>
@@ -58,6 +75,7 @@
                                 <img src="../images/html.png" alt="HTML logo">
                                 <img src="../images/css.png" alt="CSS logo">
                                 <img src="../images/javascript.png" alt="Javascript logo">
+                                <img src="../images/bootstrap.png" alt="Bootstrap logo">
                                 <img src="../images/API.png" alt="API logo">
                                 <img src="../images/github.png" alt="github logo">
                             </div>
@@ -67,12 +85,14 @@
                             <img src="../images/html.png" alt="HTML logo">
                             <img src="../images/css.png" alt="CSS logo">
                             <img src="../images/javascript.png" alt="Javascript logo">
+                            <img src="../images/bootstrap.png" alt="Bootstrap logo">
                             <img src="../images/API.png" alt="API logo">
                             <img src="../images/react.png" alt="react logo">
                             <img src="../images/github.png" alt="github logo">
                         </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- PROJECTS -->
@@ -86,8 +106,8 @@
                 </div>
                 <div class="project_text">
                     <h4>Weather App Vanilla JS</h4>
-                    <p>Developed using HTML5, CSS3 and JS6</p>
-                    <button class="btn_project"><a href="https://github.com/vicflake/Weather-App-VanillaJS" target="_blank">View Github</a></button>
+                    <p>Developed using HTML5, CSS3, JS6 and Bootstrap. Integrated external API for real life data.</p>
+                    <button class="btn_project"><a href="https://github.com/vicflake/Weather-App-VanillaJS" target="_blank">View Code</a></button>
                     <button class="btn_project"><a href="https://weather-app-vanilla-sc.netlify.app/" target="_blank">View Live</a></button>
                 </div>
             </div>
@@ -99,8 +119,8 @@
                 </div>
                 <div class="project_text">
                     <h4>Weather App React</h4>
-                    <p>Developed using HTML5, CSS3 and React</p>
-                    <button class="btn_project"><a href="https://github.com/vicflake/weather-app-react" target="_blank">View Github</a></button>
+                    <p>Developed using HTML5, CSS3, Flexbox and Grid, and React. Integrated external API for real life data.</p>
+                    <button class="btn_project"><a href="https://github.com/vicflake/weather-app-react" target="_blank">View Code</a></button>
                     <button class="btn_project"><a href="https://weather-app-react-sc.netlify.app" target="_blank">View Live</a></button>
                 </div>
             </div>
@@ -112,8 +132,8 @@
                 </div>
                 <div class="project_text">
                         <h4>Sign up Form - Front End Mentor</h4>
-                        <p>Developed using HTML5, CSS3 and JS6</p>
-                        <button class="btn_project"><a href="https://github.com/vicflake/sign-up-form" target="_blank">View Github</a></button>
+                        <p>Developed using HTML5, CSS3, Flexbox and JS6</p>
+                        <button class="btn_project"><a href="https://github.com/vicflake/sign-up-form" target="_blank">View Code</a></button>
                     <button class="btn_project"><a href="https://signup-form-fem.netlify.app" target="_blank">View Live</a></button>
                 </div>
             </div>

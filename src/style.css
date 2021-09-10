@@ -57,9 +57,10 @@ h3 {
 }
 
 
-ul {
+.navbar ul {
     display: none;
 }
+
 
 
 li {
@@ -78,12 +79,14 @@ a {
 }
 
 li a:after {
-    position: absolute;
-    left: 0.2rem;
     content: '';
-    height: 11px;
-    width: 40px;
-    border-bottom: solid 12px var(--yellow);
+    display: block;
+    position: absolute;
+    top: 52%;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: var(--yellow);
     opacity: 0;
     z-index: -1;
 }
@@ -91,6 +94,7 @@ li a:after {
 li a:hover:after {
     opacity: 0.75;
 }
+
 
 button {
     color: var(--black);
@@ -125,8 +129,32 @@ NAVIGATION BAR - MOBILE
     position: sticky;
     background-color: white;
     top: 0;
-    z-index: 1000;
+    z-index: 5;
 }
+
+.header_menu {
+    display: none;
+}
+.mobile {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    background: var(--white);
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    flex-direction: column;
+    text-align: center;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile a {
+    margin-bottom: 2rem;
+}
+
 
 span.hamburguer_menu_line {
     display: block;
@@ -156,6 +184,8 @@ span.hamburguer_menu_line {
 
 }
 
+
+
 /* ========================
 NAVIGATION BAR - LARGER SCREENS
 =========================== */
@@ -170,6 +200,10 @@ NAVIGATION BAR - LARGER SCREENS
     }
 
     .hamburguer__menu{
+        display: none;
+    }
+
+    .header_menu_mobile {
         display: none;
     }
 }
@@ -202,7 +236,7 @@ SECTION - INTRODUCTION
     color: var(--white);
 }
 
-.career_desc {
+.career {
     display: block;
     color: var(--grey);
     font-size: 1.25rem;
@@ -299,9 +333,12 @@ SECTION - EDUCATION
 }
 
 @media (min-width: 1300px) {
-    .section__education {
+    .bg-extend {
         background-image: linear-gradient(to left, var(--yellow) 50%, var(--white)50%);
+        padding: 0;
     }
+
+
 }
 
 /* =============
@@ -321,23 +358,18 @@ SECTION - EDUCATION
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin-bottom: none;
 }
 
 .project_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
     cursor: pointer;
-    border: 1px solid var(--grey);
-    border-bottom: none;
+
 }
 
 .project_text {
     margin-bottom: 2rem;
-    padding: 1rem;
-    border: 1px solid var(--grey);
     border-top: none;
     border-radius: 0 0 10px 10px;
 }
