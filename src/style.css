@@ -383,6 +383,10 @@ SECTION - EDUCATION
     border-radius: 0 0 10px 10px;
 }
 
+.project_text p {
+    margin-bottom: 0;
+}
+
 .btn_project {
     margin-top: 0.5rem;
 }
