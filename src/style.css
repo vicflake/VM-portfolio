@@ -289,6 +289,7 @@ SECTION - EDUCATION
 =================== */
 .section__education{
     padding-top: 3.75rem;
+    background-color: var(--white);
 }
 
 .about_me, .certificates {
