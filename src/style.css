@@ -106,7 +106,7 @@ li a:hover:after {
 }
 
 
-button {
+.btn {
     color: var(--black);
     background-color: inherit;
     padding: 0.725rem;
@@ -115,7 +115,7 @@ button {
     box-shadow: 1px 1px 3px var(--black);
 }
 
-button:hover {
+.btn:hover {
     cursor: pointer;
     background-color: var(--yellow);
 }
@@ -208,7 +208,7 @@ NAVIGATION BAR - LARGER SCREENS
         display: flex;
     }
 
-    .navbar button {
+    .navbar .btn {
         display: block;
     }
 
@@ -230,7 +230,7 @@ SECTION - INTRODUCTION
     text-align: left;
     overflow: hidden;
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 55px);
     background-color: var(--yellow);
 }
 
@@ -238,13 +238,14 @@ SECTION - INTRODUCTION
     padding-left: 2rem;
 }
 
-.section__introduction button {
+.section__introduction .btn {
     display: block;
     width: 230px;
     margin: 2rem;
+    text-align: center;
 }
 
-.section__introduction button:hover {
+.section__introduction .btn:hover {
     background-color: var(--black);
     color: var(--white);
 }
@@ -262,6 +263,7 @@ SECTION - INTRODUCTION
 @media (min-width: 800px){
     .section__introduction{
         background-color: white;
+        height: 100vh;
     }
     .introduction {
         background-color: var(--yellow);
@@ -276,7 +278,7 @@ SECTION - INTRODUCTION
         font-size: 2.75rem;
     }
 
-    .section__introduction button {
+    .section__introduction .btn {
         margin: 2rem 2rem;
     }
 }
@@ -288,7 +290,6 @@ SECTION - INTRODUCTION
 SECTION - EDUCATION
 =================== */
 .section__education{
-    padding-top: 3.75rem;
     background-color: var(--white);
 }
 
@@ -321,7 +322,7 @@ SECTION - EDUCATION
 
 @media (min-width:650px) {
     .certificate_item > img {
-        width: 500px;
+        width: 400px;
         margin-bottom: 0.5rem;
     }
 }
@@ -330,7 +331,6 @@ SECTION - EDUCATION
     .section__education {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 100vh;
         padding-top: 3.75rem;
     }
 
@@ -360,7 +360,7 @@ SECTION - EDUCATION
     PROJECTS PORTFOLIO
 ================*/
 .section__projects {
-    padding: 5.75rem 2rem;
+    padding: 2rem 2rem;
     margin-bottom: 5rem;
 }
 
@@ -385,7 +385,7 @@ SECTION - EDUCATION
 }
 
 .project_text p {
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
 }
 
 .btn_project {
